@@ -17,17 +17,17 @@ jobs:
       - name: Build with Gradle
         run: ./gradlew build buildPlugin
       - name: Archive Pork Bundle
-        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: pork-bundle
           path: tool/build/distributions/pork.zip
       - name: Archive Pork Jar
-        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: pork-jar
           path: tool/build/libs/pork-all.jar
       - name: Archive Idea Plugin
-        uses: actions/upload-artifact@4cec3d8aa04e39d1a68397de0c4cd6fb9dce8ec1 # v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: pork-idea
           path: support/pork-idea/build/distributions/pork-idea.zip
